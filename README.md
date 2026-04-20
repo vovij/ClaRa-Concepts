@@ -1,4 +1,4 @@
-# CLaRa Extension: End-to-End RAG with Implicit Knowledge Graph
+# CLaRa Concepts: Documenting Understanding of CLaRa
 
 This repository documents my understanding of the CLaRa framework and the concepts underlying my dissertation project, which aims to extend CLaRa with a differentiable temporal link matrix over retrieved chunks to model multi-hop reasoning.
 
