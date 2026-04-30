@@ -1,0 +1,7 @@
+## Testing Multi Hop Limitations
+
+To evaluate how well the baseline implementation of CLaRa handles the multi-hop reasoning challenges outlined above, we propose testing it on datasets that are entirely outside of its training and evaluation pipeline. We are going to look at the multi hop datasets outside the ones the CLaRa has already been tested on: HotpotQA[4], MuSiQue[5], and 2WikiMultiHopQA[6], to specifically add more tests on it's ability to retrieve information on multi hop queries.
+
+We look for held-out datasets that vary query complexity across a spectrum, ranging from single-fact questions through to multi-hop and aggregation-style queries, so that we can analyse how CLaRa's performance degrades as reasoning demands increase. This approach also aligns with a broader component-level analysis strategy: rather than evaluating the system end-to-end, we aim to first stress-test individual components: compression, retrieval, and the LoRA adapters, under controlled conditions of increasing query difficulty, before drawing conclusions about the system as a whole. 
+
+Below are the proposed datasets and the reasoning of why they may show the current limitations of CLaRa in multi-hop reasoning domain. 

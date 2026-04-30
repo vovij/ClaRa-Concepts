@@ -1,0 +1,7 @@
+##### FRAMES (Factuality, Retrieval, And reasoning MEasurement Set)
+
+FRAMES is a particularly well-suited benchmark for probing CLaRa's multi-hop limitations for several reasons. First, unlike HotpotQA or MuSiQue which constrain reasoning to a fixed number of hops, FRAMES questions require integrating between 2 and 15 Wikipedia articles to arrive at a correct answer, which provides a natural complexity spectrum that allows us to observe how CLaRa's performance degrades as the number of required retrieval steps grows. 
+
+Second, the dataset is structured around five different reasoning types: numerical reasoning, tabular reasoning, multiple constraints, temporal reasoning, and post-processing. This diversity  allows to look more deeply into which reasoning types expose the weaknesses of CLaRa's single-pass retrieval mechanism. This aligns directly with our goal to analyse query complexity across easy, medium, and hard categories. 
+
+Finally, the paper's own baseline results are telling: even state-of-the-art models such as Gemini Pro 1.5 achieve only 0.408 accuracy without retrieval and 0.729 with oracle retrieval, with the gap being most pronounced in numerical, tabular, and post-processing categories [7]. These are the kinds of reasoning that CLaRa's embedding similarity based retrieval is likely least equipped to handle.
